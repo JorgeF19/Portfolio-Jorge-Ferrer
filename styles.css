@@ -1,9 +1,14 @@
+html {
+  padding: 0;
+  overflow-x: hidden;
+}
 body {
   background-color: #3a3737;
   font-family: "Space mono";
   color: #e6daf5;
   margin: 0;
   margin-top: 5rem;
+  padding: 0;
 }
 @font-face {
   font-family: "Space mono";
@@ -206,15 +211,15 @@ nav h3 {
 .projects-container {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-
-  align-items: center;
+  grid-template-rows: auto auto;
+  align-items: start;
 
   gap: 1rem;
 }
 .ui-ux {
   display: grid;
 
-  grid-template-rows: 5rem 3rem 9rem 3rem 8rem 3rem;
+  grid-template-rows: 5rem 3rem 1fr 3rem 1fr 3rem;
   grid-column: 2/4;
 }
 
@@ -222,12 +227,13 @@ nav h3 {
   grid-column: 5/7;
   margin: 0;
   display: grid;
-  grid-template-rows: 5rem 3rem 9rem 3rem 8rem 3rem;
+  grid-template-rows: 5rem 3rem 1fr 3rem 1fr 3rem;
 }
-
+.project-type-subtitle {
+  display: flex;
+  justify-content: center;
+}
 .projects-container h2 {
-  font-size: 1.5rem;
-  margin-left: 5px;
   color: #e6daf5;
   font-family: "Space Mono bold";
   font-size: 2.25rem;
@@ -235,6 +241,7 @@ nav h3 {
   font-weight: 700;
   line-height: normal;
   justify-self: center;
+  align-self: center;
 }
 .projects-container .subtitle1 {
   color: #e6daf5;
@@ -342,4 +349,46 @@ footer p {
 .buttons-footer .button-email {
   margin-top: 0;
   justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+
+    row-gap: 2rem;
+  }
+
+  .left-skill {
+    justify-self: end;
+
+    margin: 0;
+    padding: 0;
+  }
+  .projects-container {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .ui-ux {
+    grid-template-rows: 4rem 5rem 1fr 3rem 1fr 1fr;
+    gap: 1rem;
+  }
+  .webPages {
+    justify-self: center;
+    grid-row: 2/3;
+    grid-column: 2/4;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+    padding: 0;
+  }
+}
+@media (max-width: 500px) {
+  .ui-ux {
+    grid-template-rows: 4rem 5rem 1fr 3rem 12rem 5rem;
+    margin-bottom: 2rem;
+  }
 }
