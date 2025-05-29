@@ -148,7 +148,7 @@ nav h3 {
   justify-self: center;
   justify-content: center;
   align-items: center;
-
+  padding: 15px;
   height: 3.375rem;
   border-radius: 0.4375rem;
   background: #8248c7;
@@ -219,15 +219,17 @@ nav h3 {
 .ui-ux {
   display: grid;
 
-  grid-template-rows: 5rem 3rem 1fr 3rem 1fr 3rem;
+  grid-template-rows: 5rem 1fr 3rem 1fr 3rem;
   grid-column: 2/4;
 }
-
+.project-description {
+  grid-row: 2/3;
+}
 .webPages {
   grid-column: 5/7;
   margin: 0;
   display: grid;
-  grid-template-rows: 5rem 3rem 1fr 3rem 1fr 3rem;
+  grid-template-rows: 5rem 1fr 3rem 1fr 3rem;
 }
 .project-type-subtitle {
   display: flex;
@@ -243,21 +245,8 @@ nav h3 {
   justify-self: center;
   align-self: center;
 }
-.projects-container .subtitle1 {
-  color: #e6daf5;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  grid-row: 2;
-  justify-self: center;
-  font-family: "Space Mono";
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  margin: 0;
-  align-self: center;
-}
+
 .projects-container p {
-  grid-row: 3/4;
   color: #e6daf5;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: "Space Mono";
@@ -266,11 +255,7 @@ nav h3 {
   font-weight: 400;
   line-height: normal;
 }
-.projects-container .subtitle2 {
-  grid-row: 4/5;
-  font-size: 1.5rem;
-  align-self: center;
-}
+
 .projects-container li {
   font-size: 1.2rem;
 }
@@ -278,13 +263,12 @@ ul {
   padding-inline-start: 18px;
 }
 .button-icon-project {
-  width: 6.3125rem;
-  height: 3.25rem;
   flex-shrink: 0;
   aspect-ratio: 101/52;
   border-radius: 0.4375rem;
   background: #8248c7;
   justify-self: center;
+  padding: 10px;
 }
 .education-section {
   justify-content: center;
