@@ -3,7 +3,7 @@ html {
   overflow-x: hidden;
 }
 body {
-  background-color: #3a3737;
+  background-color: #031a3f;
   font-family: "Space mono";
   color: #e6daf5;
   margin: 0;
@@ -20,7 +20,8 @@ body {
   src: url(fonts/Monospaceland/Monospaceland-Bold.ttf) format("truetype");
 }
 p,
-h1 {
+h1,
+h2 {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 nav {
@@ -55,15 +56,15 @@ nav p {
 }
 button {
   border-radius: 7px;
-  background: #8248c7;
+  background: #005bff;
   flex-shrink: 0;
   border: none;
   cursor: pointer;
 }
 .notification {
   position: fixed;
-  background-color: #8148c7d5;
-  color: #e6daf5;
+  background-color: #005bff;
+  color: #ace6ff;
   padding: 5px 10px;
   border-radius: 5px;
   font-family: "Space mono bold";
@@ -91,7 +92,7 @@ button {
   margin: 0;
 }
 .button-email {
-  color: #e6daf5;
+  color: #ace6ff;
   font-family: "Space mono bold";
   margin-top: 10px;
   font-size: 1.25rem;
@@ -151,13 +152,13 @@ nav h3 {
   padding: 15px;
   height: 3.375rem;
   border-radius: 0.4375rem;
-  background: #8248c7;
+  background: #005bff;
   margin: 2rem;
 }
 .skills-title h2 {
   font-size: 1.5rem;
   margin-left: 5px;
-  color: #e6daf5;
+  color: #ace6ff;
   font-family: "Space Mono bold";
   font-size: 2.25rem;
   font-style: normal;
@@ -179,7 +180,7 @@ nav h3 {
   width: 5.3125rem;
   height: 3.25rem;
   border-radius: 0.4375rem;
-  background: #8248c7;
+  background: #005bff;
   flex-shrink: 0;
 }
 .icon-container .icon {
@@ -193,7 +194,7 @@ nav h3 {
   flex-shrink: 0;
 }
 .project-section h1 {
-  color: #e6daf5;
+  color: #ace6ff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: "Space Mono bold";
   font-size: 2.5rem;
@@ -236,7 +237,7 @@ nav h3 {
   justify-content: center;
 }
 .projects-container h2 {
-  color: #e6daf5;
+  color: #ace6ff;
   font-family: "Space Mono bold";
   font-size: 2.25rem;
   font-style: normal;
@@ -247,7 +248,7 @@ nav h3 {
 }
 
 .projects-container p {
-  color: #e6daf5;
+  color: #ace6ff;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: "Space Mono";
   font-size: 1.2rem;
@@ -266,7 +267,7 @@ ul {
   flex-shrink: 0;
   aspect-ratio: 101/52;
   border-radius: 0.4375rem;
-  background: #8248c7;
+  background: #005bff;
   justify-self: center;
   padding: 10px;
 }
@@ -318,7 +319,7 @@ footer p {
   margin: 0;
   padding: 0;
   font-size: 0.8rem;
-  color: #e6e6e6;
+  color: #ace6ff;
 }
 .buttons-footer {
   display: flex;
